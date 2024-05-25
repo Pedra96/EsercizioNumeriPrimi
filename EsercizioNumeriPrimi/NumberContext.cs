@@ -10,7 +10,7 @@ namespace EsercizioNumeriPrimi
 {
     public class NumberContext : DbContext
     {
-        static string connectionString = "Data Source=Pedra\\mssqlserver01;Initial Catalog=PrimeNumber;Integrated Security=True;Trust Server Certificate=True";
+        static string connectionString = "";
         public NumberContext() : base(GetOptions()){ }
 
         public DbSet<PrimeNumber> PrimeNumbers { get; set; }
